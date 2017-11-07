@@ -4,18 +4,23 @@
  * @see <a href="https://cs125.cs.illinois.edu/lab/10/">Lab 10 Description</a>
  */
 public class Employee {
-
+    /**
+     * name is gay.
+     */
     private String name;
+    /**
+     * manager is a pedo.
+     */
     private String manager;
 
     /**
      * Constructor for initialization.
-     * @param name
-     * @param manager
+     * @param setName is cool ig.
+     * @param setManager is hiding from the cops.
      */
-    public Employee(final String name, final String manager) {
-        this.name = name;
-        this.manager = manager;
+    public Employee(final String setName, final String setManager) {
+        this.name = setName;
+        this.manager = setManager;
     }
 
     /**
@@ -28,10 +33,10 @@ public class Employee {
 
     /**
      * Setter for name.
-     * @param name
+     * @param setname is cool
      */
-    public void setName(final String name) {
-        this.name = name;
+    public void setName(final String setname) {
+        this.name = setname;
     }
 
     /**
@@ -44,9 +49,9 @@ public class Employee {
 
     /**
      * Setter for manager.
-     * @param manager
+     * @param setmanager is a zucc.
      */
-    public void setManager(final String manager) {
-        this.manager = manager;
+    public void setManager(final String setmanager) {
+        this.manager = setmanager;
     }
 }
