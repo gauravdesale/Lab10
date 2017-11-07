@@ -15,7 +15,21 @@ public class EmployeeDatabase {
     /**
      * List of employees.
      */
+    @SuppressWarnings("checkstyle:visibilitymodifier")
     public List<Employee> employees;
+    /**
+     * @return employees is the list to return
+     */
+    public List<Employee> getEmployees() {
+        return employees;
+    }
+    /**
+     * setEmplyoee is the setter method.
+     * @param setemployees is the set thing.
+     */
+    public void setEmployees(final List<Employee> setemployees) {
+        this.employees = setemployees;
+    }
 
     /**
      * Constructor which initializes the employees list.
@@ -26,14 +40,18 @@ public class EmployeeDatabase {
     public EmployeeDatabase() {
         employees = new ArrayList<Employee>();
     }
+    /**
+     * count is a lol.
+     */
+    public int count = employees.size();
 
     /**
      * Returns the manager for the given employee.
      *
-     * @param employee
-     * @return
+     * @param employee is cool
+     * @return manager is is cool
      */
-    Employee findManager(final Employee employee) {
+    final Employee findManager(final Employee employee) {
         Employee manager = null;
         for (int i = 0; i < employees.size(); i++) {
             if (employees.get(i).getName() == employee.getManager()) {
@@ -53,9 +71,7 @@ public class EmployeeDatabase {
      * @return int
      */
     public int countManagersAbove(final Employee employee) {
-        /*
-         * Implement this function
-         */
+        return countManagersAbove(findManager(employee));
     }
 
     /**
@@ -67,9 +83,7 @@ public class EmployeeDatabase {
      * @return int
      */
     public int countEmployeesUnder(final Employee employee) {
-        /*
-         * Implement this function
-         */
+        return countEmployeesUnder(employees.get(count - 1));
     }
 
     /**
